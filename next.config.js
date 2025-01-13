@@ -24,4 +24,13 @@ const nextConfig = {
   redirects,
 }
 
+module.exports = {
+  env: {
+    DATABASE_URI: process.env.DATABASE_URI,
+    PAYLOAD_SECRET: process.env.PAYLOAD_SECRET,
+    NEXT_PUBLIC_SERVER_URL: process.env.NEXT_PUBLIC_SERVER_URL,
+    CRON_SECRET: process.env.CRON_SECRET,
+  },
+}
+
 export default withPayload(nextConfig)
